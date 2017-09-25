@@ -563,9 +563,6 @@
   $view.='</div>
             </div>';
 
-
-
-
   echo $view;
   }
 

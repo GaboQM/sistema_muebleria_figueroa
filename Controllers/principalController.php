@@ -162,6 +162,7 @@ session_start();
                         <th><i ></i>Status dias</th>
                     </thead>
                     <tbody>';
+                    
         foreach ($data as $data) {
         		if($data['tipo_pago']=="CREDITO"){
         			 $view.='<tr>';

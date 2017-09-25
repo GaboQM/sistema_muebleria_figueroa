@@ -152,20 +152,25 @@ function anular(idv){
 
     xmlhttp.open("GET","Controllers/abonarController.php?action=dt&idv="+idv,true);
     xmlhttp.send();
+
 }
 }
 
+
+
 function imprimir(idv){
+  //alert(idv);
   var view1=document.getElementById("v1");
   var xmlhttp;
     xmlhttp=new XMLHttpRequest();
     xmlhttp.onreadystatechange=function(){
       if(this.readyState===4 && this.status===200){
         view1.innerHTML=xmlhttp.responseText;
-        //alert(innerHTML=xmlhttp.responseText);
+       }
+}
     xmlhttp.open("GET","Controllers/abonarController.php?action=printf&idv="+idv,true);
   xmlhttp.send();
   
+
 }
-}
-}
+
